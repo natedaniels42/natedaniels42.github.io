@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
         <script defer src="https://kit.fontawesome.com/ae5dbc9065.js" crossorigin="anonymous"></script>
         <script defer src="./app.js"></script>
@@ -10,8 +12,8 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
+            <nav id="nav">
+                <ul id="nav-links">
                     <li>
                         <a id="home-button" href="#banner">Home</a>
                     </li>
@@ -28,6 +30,7 @@
                         <a id="social-button" href="#contact">Contact Me</a>
                     </li>
                 </ul>
+                <i class="fas fa-ellipsis-h fa-2x" id="hamburger"></i>
             </nav>
         </header>
         <main>
@@ -36,19 +39,21 @@
                 <h2>Software Engineer</h2>
             </section>
             <section id="projects">
-                <div class="project-card">
+                <div id="forward"><i class="fas fa-arrow-circle-right fa-3x"></i></div>
+                <div id="back"><i class="fas fa-arrow-circle-left fa-3x"></i></div>
+                <div class="project-card" id="card1">
                     <img src="./food.jpg" alt="colorful food">
                 </div>
-                <div class="project-card">
+                <div class="project-card" id="card2">
                     <img src="./London1.jpeg" alt="London">
                 </div>
-                <div class="project-card">
+                <div class="project-card" id="card3">
                     <img src="./petplaces.jpg" alt="Pets4U logo">
                 </div>
-                <div class="project-card">
+                <div class="project-card" id="card4">
                     <img src="./Rectangle-27.png" alt="Woman lifting weights">
                 </div>
-                <div class="project-card">
+                <div class="project-card" id="card5">
                     <img src="https://st2.depositphotos.com/3687485/10323/v/950/depositphotos_103239208-stock-illustration-color-easter-egg-cartoon-spring.jpg" >
                 </div>
             </section>
