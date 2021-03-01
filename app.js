@@ -2,19 +2,28 @@ const homeButton = document.getElementById('home-button');
 const banner = document.getElementById('banner');
 const projectButton = document.getElementById('projects-button');
 const projects = document.getElementById('projects');
+const techButton = document.getElementById('tech-button');
+const tech = document.getElementById('tech');
 const socialButton = document.getElementById('social-button');
 const social = document.getElementById('social');
 const back = document.getElementById('back');
 const forward = document.getElementById('forward');
 const projectLength = document.getElementsByClassName('project-card').length;
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+const navLinks = document.getElementById('nav-links');
 const nav = document.getElementById('nav');
 const projectCard = document.getElementsByClassName('project-card');
+
 let currentSection = banner;
 let projectId = 2;
 
-
+hamburger.addEventListener('click', () => {
+    if (navLinks.style.visibility === 'hidden') {
+        navLinks.style.visibility = 'visible';
+    } else {
+        navLinks.style.visibility = 'hidden';
+    }
+})
 
 back.addEventListener('click', () => {
     if (projectId > 2) {
@@ -81,6 +90,22 @@ homeButton.addEventListener('click', () => {
         banner.style.visibility = 'visible';
         banner.style.opacity = '1';
         banner.style.transition = 'opacity 2s';
+        currentSection.style.opacity = '0';
+        currentSection.style.transition = 'opacity 2s';
+        //currentSection.style.visibility = 'hidden';
+        //currentSection = banner;
+    }
+})
+
+techButton.addEventListener('click', () => {
+    if (currentSection !== tech) {
+        setTimeout(() => {
+            currentSection.style.visibility = 'hidden';
+            currentSection = tech;
+        }, 2000)
+        tech.style.visibility = 'visible';
+        tech.style.opacity = '1';
+        tech.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
         //currentSection.style.visibility = 'hidden';
