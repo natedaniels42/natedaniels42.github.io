@@ -13,7 +13,7 @@ body {
 
 @keyframes animation {
     100% {
-        background-position: -500px -10px;
+        background-position: -200px -10px;
     }
 }
 
@@ -78,160 +78,160 @@ main {
 }
 
 #star1 {
-    top: 200px;
-    left: 300px;
+    top: 30%;
+    left: 52%;
     width: 2px;
     height: 2px;
     animation: twinkle 2s ease infinite;
 }
 
 #star2 {
-    top: 20px;
-    left: 500px;
+    top: 79%;
+    left: 88%;
     width: 3px;
     height: 3px;
     animation: twinkle 3s ease infinite;
 }
 
 #star3 {
-    top: 420px;
-    left: 12px;
+    top: 65%;
+    left: 12%;
     width: 2px;
     height: 2px;
     animation: twinkle 5s ease infinite;
 }
 
 #star4 {
-    top: 268px;
-    left: 608px;
+    top: 38%;
+    left: 78%;
     width: 1px;
     height: 1px;
     animation: twinkle 4s ease infinite;
 }
 
 #star5 {
-    top: 28px;
-    left: 42px;
+    top: 90%;
+    left: 84%;
     width: 2px;
     height: 2px;
     animation: twinkle 2s ease infinite;
 }
 
 #star6 {
-    top: 528px;
-    left: 422px;
+    top: 76%;
+    left: 48%;
     width: 3px;
     height: 3px;
     animation: twinkle 10s ease infinite;
 }
 
 #star7 {
-    top: 242px;
-    left: 412px;
+    top: 29%;
+    left: 67%;
     width: 2px;
     height: 2px;
     animation: twinkle 3s ease infinite;
 }
 
 #star8 {
-    top: 662px;
-    left: 343px;
+    top: 8%;
+    left: 63%;
     width: 1px;
     height: 1px;
     animation: twinkle .5s ease infinite;
 }
 
 #star9 {
-    top: 58px;
-    left: 426px;
+    top: 18%;
+    left: 77%;
     width: 2px;
     height: 2px;
     animation: twinkle 2s ease infinite;
 }
 
 #star10 {
-    top: 234px;
-    left: 234px;
+    top: 36%;
+    left: 36%;
     width: 3px;
     height: 3px;
     animation: twinkle 6s ease infinite;
 }
 
 #star11 {
-    top: 412px;
-    left: 522px;
+    top: 49%;
+    left: 52%;
     width: 2px;
     height: 2px;
     animation: twinkle 4s ease infinite;
 }
 
 #star12 {
-    top: 121px;
-    left: 122px;
+    top: 23%;
+    left: 14%;
     width: 1px;
     height: 1px;
     animation: twinkle 1s ease infinite;
 }
 
 #star13 {
-    top: 300px;
-    left: 153px;
+    top: 50%;
+    left: 28%;
     width: 2px;
     height: 2px;
     animation: twinkle 3s ease infinite;
 }
 
 #star14 {
-    top: 400px;
-    left: 400px;
+    top: 68%;
+    left: 44%;
     width: 3px;
     height: 3px;
     animation: twinkle 7s ease infinite;
 }
 
 #star15 {
-    top: 772px;
-    left: 514px;
+    top: 52%;
+    left: 34%;
     width: 2px;
     height: 2px;
     animation: twinkle 2s ease infinite;
 }
 
 #star16 {
-    top: 659px;
-    left: 111px;
+    top: 88%;
+    left: 23%;
     width: 1px;
     height: 1px;
     animation: twinkle 4s ease infinite;
 }
 
 #star17 {
-    top: 279px;
-    left: 376px;
+    top: 43%;
+    left: 48%;
     width: 2px;
     height: 2px;
     animation: twinkle 3s ease infinite;
 }
 
 #star18 {
-    top: 412px;
-    left: 321px;
+    top: 70%;
+    left: 36%;
     width: 3px;
     height: 3px;
     animation: twinkle 2s ease infinite;
 }
 
 #star19 {
-    top: 555px;
-    left: 333px;
+    top: 80%;
+    left: 70%;
     width: 2px;
     height: 2px;
     animation: twinkle 5s ease infinite;
 }
 
 #star20 {
-    top: 652px;
-    left: 652px;
+    top: 90%;
+    left: 48%;
     width: 1px;
     height: 1px;
     animation: twinkle 1s ease infinite;
@@ -296,8 +296,8 @@ h1, h2 {
     height: 100%;
 }
 
-.project-card:hover > img {
-    opacity: 0.1;
+.project-card:hover > a {
+    opacity: 0.2;
 }
 
 .project-card:hover > p {
