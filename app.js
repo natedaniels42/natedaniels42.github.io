@@ -76,9 +76,9 @@ projectButton.addEventListener('click', () => {
         projects.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        if (window.innerWidth < 800) {
-            navLinks.style.visibility = 'hidden';
-        }
+    }
+    if (window.innerWidth < 800) {
+        navLinks.style.visibility = 'hidden';
     }
 })
 
@@ -93,9 +93,9 @@ homeButton.addEventListener('click', () => {
         banner.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        if (window.innerWidth < 800) {
-            navLinks.style.visibility = 'hidden';
-        }
+    }
+    if (window.innerWidth < 800) {
+        navLinks.style.visibility = 'hidden';
     }
 })
 
@@ -110,9 +110,9 @@ techButton.addEventListener('click', () => {
         tech.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        if (window.innerWidth < 800) {
-            navLinks.style.visibility = 'hidden';
-        }
+    }
+    if (window.innerWidth < 800) {
+        navLinks.style.visibility = 'hidden';
     }
 })
 
@@ -127,12 +127,16 @@ socialButton.addEventListener('click', () => {
         social.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        if (window.innerWidth < 800) {
-            navLinks.style.visibility = 'hidden';
-        }
+    }
+    if (window.innerWidth < 800) {
+        navLinks.style.visibility = 'hidden';
     }
 })
 
-if (window.innerWidth > 800) {
-    navLinks.style.visibility = 'visible';
-};
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 800) {
+        navLinks.style.visibility = 'visible';
+    } else {
+        navLinks.style.visibility = 'hidden';
+    }
+})
