@@ -18,7 +18,7 @@ let currentSection = banner;
 let projectId = 2;
 
 hamburger.addEventListener('click', () => {
-    if (navLinks.style.visibility === 'hidden') {
+    if (navLinks.style.visibility === 'hidden' || !navLinks.style.visibility) {
         navLinks.style.visibility = 'visible';
     } else {
         navLinks.style.visibility = 'hidden';
@@ -76,8 +76,6 @@ projectButton.addEventListener('click', () => {
         projects.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        //currentSection.style.visibility = 'hidden';
-        //currentSection = projects;
     }
 })
 
@@ -92,8 +90,6 @@ homeButton.addEventListener('click', () => {
         banner.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        //currentSection.style.visibility = 'hidden';
-        //currentSection = banner;
     }
 })
 
@@ -108,8 +104,6 @@ techButton.addEventListener('click', () => {
         tech.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        //currentSection.style.visibility = 'hidden';
-        //currentSection = banner;
     }
 })
 
@@ -124,8 +118,9 @@ socialButton.addEventListener('click', () => {
         social.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
-        //currentSection.style.visibility = 'hidden';
-        //currentSection = social;
     }
 })
 
+if (window.innerWidth > 800) {
+    navLinks.style.visibility = 'visible';
+};
