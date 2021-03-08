@@ -2,6 +2,8 @@ const homeButton = document.getElementById('home-button');
 const banner = document.getElementById('banner');
 const aboutButton = document.getElementById('about-button');
 const about = document.getElementById('about');
+const aboutBox = document.getElementById('about-box');
+const sampleImages = document.getElementsByClassName('')
 const projectButton = document.getElementById('projects-button');
 const projects = document.getElementById('projects');
 const techButton = document.getElementById('tech-button');
@@ -16,6 +18,8 @@ const navLinks = document.getElementById('nav-links');
 const nav = document.getElementById('nav');
 const projectCard = document.getElementsByClassName('project-card');
 
+const aboutImages = ["url('./images/nate-outdoors.jpg')", "url('./images/nate-bassoon.jpg')", "url('./images/alfine-tongue.jpg')"];
+const random = Math.floor(Math.random() * aboutImages.length);
 let currentSection = banner;
 let projectId = 2;
 
@@ -103,11 +107,19 @@ aboutButton.addEventListener('click', () => {
         about.style.transition = 'opacity 2s';
         currentSection.style.opacity = '0';
         currentSection.style.transition = 'opacity 2s';
+        aboutBox.style.backgroundImage = aboutImages[random];
     }
     if (window.innerWidth < 800) {
         navLinks.style.visibility = 'hidden';
     }
 })
+
+for (let i = 1; i <= 3; i++) {
+    const sample = document.getElementById(`sample-image${i}`);
+    sample.addEventListener('click', () => {
+        aboutBox.style.backgroundImage = aboutImages[i - 1];
+    })
+}
 
 projectButton.addEventListener('click', () => {
     if (currentSection !== projects) {
