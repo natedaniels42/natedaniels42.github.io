@@ -271,14 +271,23 @@ main {
     visibility: visible;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
 h1, h2 {
     color: white;
-    font-family: 'Rubik', sans-serif;
     /*animation: float-away 2s infinite;*/
 }
 
 h1, h2, p {
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .1rem;
+    line-height: 1.25;
 }
 
 
@@ -388,7 +397,7 @@ h1, h2, p {
 
 .project-card p {
     position: absolute;
-    bottom: 0;
+    top: 40%;
     opacity: 0;
     font-size: 20px;
 }
@@ -500,6 +509,10 @@ h1, h2, p {
 }
 
 @media screen and (max-width: 800px) {
+    h1, h2, p {
+        font-size: 80%;
+    }
+
     #projects {
         display: block;
         overflow: visible;
