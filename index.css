@@ -387,17 +387,18 @@ h1, h2, p {
     height: 100%;
 }
 
-.project-card:hover > a {
+.project-card:hover a > img {
     opacity: 0.2;
 }
 
-.project-card:hover > p {
+.project-card:hover a > p {
     opacity: 1;
+    color: black;
 }
 
 .project-card p {
     position: absolute;
-    top: 40%;
+    top: 25%;
     opacity: 0;
     font-size: 20px;
 }
@@ -509,7 +510,7 @@ h1, h2, p {
 }
 
 @media screen and (max-width: 800px) {
-    h1, h2, p {
+    p {
         font-size: 80%;
     }
 
