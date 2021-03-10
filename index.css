@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #0F1A70;
+    --secondary-color: #ffffff;
+    --tertiary-color: #040806;
+    --accent-color: #4DC9E5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +25,6 @@ body {
 }
 
 nav {
-    background-color: lightcyan;
     position: fixed;
     top: 0;
     width: 100%;
@@ -46,17 +52,17 @@ li {
 }
 
 li:hover {
-    color: white;
-    background-color: lightseagreen;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 li:hover a {
-    color: white;
+    color: var(--primary-color);
 }
 
 a {
     text-decoration: none;
-    color: green;
+    color: var(--secondary-color);
     font-size: 20px;
 }
 
@@ -398,7 +404,7 @@ h1, h2, p, li {
 
 .project-card:hover a > p {
     opacity: 1;
-    color: black;
+    color: var(--tertiary-color);
 }
 
 .project-description {
@@ -429,7 +435,7 @@ h1, h2, p, li {
 #tech-box {
     width: 400px;
     height: 400px;
-    background-color: lightcyan;
+    /*background-color: var(--secondary-color);*/
     display: flex;
     border-radius: 10px;
 }
@@ -468,7 +474,6 @@ h1, h2, p, li {
 #social-box {
     width: 400px;
     height: 200px;
-    background-color: lightcyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,7 +482,10 @@ h1, h2, p, li {
 
 .social-icon {
     margin: 10px;
+    color: lightgray;
 }
+
+
 
 .fab, .fas {
     width: 100px;
@@ -486,7 +494,7 @@ h1, h2, p, li {
 }
 
 .fab:hover, .fas:hover {
-    color: lightseagreen;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -543,6 +551,6 @@ h1, h2, p, li {
         position: absolute;
         top: 60px;
         display: block;  
-        background-color: lightcyan;  
+        background-color: var(--primary-color);  
     }
 }
