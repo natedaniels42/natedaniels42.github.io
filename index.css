@@ -537,7 +537,7 @@ h1, h2, p, li {
 
 @media screen and (max-width: 800px) {
     p {
-        font-size: 80%;
+        font-size: 70%;
     }
 
     #projects {
@@ -563,6 +563,6 @@ h1, h2, p, li {
         position: absolute;
         top: 60px;
         display: block;  
-        /*background-color: var(--primary-color);*/  
+        background-color: var(--primary-color); 
     }
 }
