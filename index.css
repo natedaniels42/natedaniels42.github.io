@@ -36,6 +36,10 @@ nav {
     visibility: visible;
 }
 
+.nav-button {
+    cursor: pointer;
+}
+
 li {
     list-style: none;
     padding: 10px;
