@@ -337,6 +337,14 @@ h1, h2, p, li {
     justify-content: center;
 }
 
+#here {
+    color: var(--primary-color);
+}
+
+#here:hover {
+    color: var(--accent-color);
+}
+
 #background-box {
     position: absolute;
     display: flex;
