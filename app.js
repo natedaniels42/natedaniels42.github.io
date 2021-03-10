@@ -36,6 +36,9 @@ window.addEventListener('resize', () => {
         navLinks.style.visibility = 'visible';
     } else {
         navLinks.style.visibility = 'hidden';
+        for (let i = 0; i < projectCard.length; i++) {
+            projectCard[i].removeAttribute('style');
+        }
     }
 })
 
