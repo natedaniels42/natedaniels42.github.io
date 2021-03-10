@@ -354,6 +354,7 @@ h1, h2, p, li {
     background-size: cover;
     opacity: .3;
     margin: 0 auto;
+    background-position: center center;
 }
 
 #text-box {
