@@ -288,7 +288,7 @@ h1, h2 {
     /*animation: float-away 2s infinite;*/
 }
 
-h1, h2, p {
+h1, h2, p, li {
     font-family: 'Rubik', sans-serif;
     letter-spacing: .1rem;
     line-height: 1.25;
@@ -400,11 +400,12 @@ h1, h2, p {
     color: black;
 }
 
-.project-card p {
+.project-description {
     position: absolute;
     top: 25%;
     opacity: 0;
     font-size: 20px;
+    margin: 0 10%;
 }
 
 .project-card img {
