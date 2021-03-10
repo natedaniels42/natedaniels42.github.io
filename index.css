@@ -68,8 +68,12 @@ a {
 
 #hamburger {
     visibility: hidden;
+    color: var(--secondary-color);
 }
 
+#hamburger:hover {
+    color: var(--accent-color);
+}
 
 main {
     position: relative;
@@ -502,7 +506,7 @@ h1, h2, p, li {
 }
 
 .fab:hover, .fas:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
     cursor: pointer;
 }
 
@@ -559,6 +563,6 @@ h1, h2, p, li {
         position: absolute;
         top: 60px;
         display: block;  
-        background-color: var(--primary-color);  
+        /*background-color: var(--primary-color);*/  
     }
 }
