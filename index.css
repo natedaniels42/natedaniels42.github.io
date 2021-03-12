@@ -15,12 +15,12 @@ body {
     background-image: url('https://i.pinimg.com/originals/17/82/23/178223c0e273b8cc233ab4830c33c90f.jpg');
     background-size: cover;
     height: 100%;
-    animation: animation 100s linear infinite;
+    animation: animation 1000s linear infinite;
 }
 
 @keyframes animation {
     100% {
-        background-position: -200px -10px;
+        background-position: -2000px -10px;
     }
 }
 
