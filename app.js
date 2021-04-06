@@ -23,6 +23,8 @@ const random = Math.floor(Math.random() * aboutImages.length);
 let currentSection = banner;
 let projectId = 2;
 
+console.log(projectLength);
+
 hamburger.addEventListener('click', () => {
     if (navLinks.style.visibility === 'hidden' || !navLinks.style.visibility) {
         navLinks.style.visibility = 'visible';
