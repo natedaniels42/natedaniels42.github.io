@@ -48,6 +48,7 @@ nav {
 li {
     list-style: none;
     padding: 10px;
+    transition: all .5s ease-in-out;
 }
 
 li:hover {
