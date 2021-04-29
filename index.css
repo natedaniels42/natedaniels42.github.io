@@ -297,7 +297,7 @@ h1, h2 {
     color: var(--secondary-color);
 }
 
-h1, h2, p, li {
+h1, h2, p, li, a {
     font-family: 'Rubik', sans-serif;
     letter-spacing: .1rem;
     line-height: 1.25;
@@ -482,15 +482,20 @@ h1, h2, p, li {
 .social-icon {
     margin: 10px;
     color: #DDDBD8;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-
+.social-text {
+    margin: 0 auto;
+}
 
 .fab, .fas {
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
 }
 
-.fab:hover, .fas:hover {
+.social-icon:hover {
     color: var(--accent-color);
     cursor: pointer;
 }
