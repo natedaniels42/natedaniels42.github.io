@@ -150,7 +150,7 @@ main {
     left: 63%;
     width: 1px;
     height: 1px;
-    animation: twinkle .5s ease infinite;
+    animation: twinkle .5s ease infinite, animation 10s;
 }
 
 #star9 {
