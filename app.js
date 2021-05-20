@@ -23,13 +23,14 @@ const random = Math.floor(Math.random() * aboutImages.length);
 let currentSection = banner;
 let projectId = 2;
 
-console.log(projectLength);
 
 hamburger.addEventListener('click', () => {
     if (navLinks.style.visibility === 'hidden' || !navLinks.style.visibility) {
         navLinks.style.visibility = 'visible';
+        projectCard.forEach(card => card.style.opacity = '0.5');
     } else {
         navLinks.style.visibility = 'hidden';
+        projectCard.forEach(card => card.style.opacity = '1');
     }
 })
 
