@@ -554,11 +554,15 @@ h1, h2, p, li, a {
         top: 60px;
         display: block;  
         background-color: var(--primary-color);
-        opacity: .75;
+        opacity: .9;
         width: 35%;
     }
 
     #background-box, #about-box, #text-box {
         width: 100%;
+    }
+
+    #social-box {
+        flex-direction: column;
     }
 }
