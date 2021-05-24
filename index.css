@@ -526,10 +526,6 @@ h1, h2, p, li, a {
 }
 
 @media screen and (max-width: 800px) {
-    p {
-        font-size: 70%;
-    }
-
     #projects {
         display: block;
         overflow: visible;
