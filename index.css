@@ -553,8 +553,12 @@ h1, h2, p, li, a {
         position: absolute;
         top: 60px;
         display: block;  
-        /*background-color: var(--primary-color);*/ 
-        /*opacity: .75;*/
-        width: 25%;
+        background-color: var(--primary-color);
+        opacity: .75;
+        width: 35%;
+    }
+
+    #background-box, #about-box, #text-box {
+        width: 100%;
     }
 }
