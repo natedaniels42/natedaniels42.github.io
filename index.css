@@ -525,25 +525,38 @@ h1, h2, p, li, a {
     color: grey;
 }
 
+#forward:hover, #back:hover {
+    color: var(--accent-color);
+}
+
 @media screen and (max-width: 800px) {
+    p {
+        font-size: 90%;
+    }
+
     #projects {
         display: block;
         overflow: visible;
         height: 500%;
     }
+
     .project-card {
         height: 20%;
         width: 100%;
     }
+
     #back {
         visibility: hidden;
     }
+
     #forward {
         visibility: hidden;
     }
+
     #hamburger {
         visibility: visible;
     }
+
     #nav-links {
         visibility: hidden;
         position: absolute;
@@ -551,7 +564,7 @@ h1, h2, p, li, a {
         display: block;  
         background-color: var(--primary-color);
         opacity: .9;
-        width: 35%;
+        width: 40%;
     }
 
     #background-box, #about-box, #text-box {
