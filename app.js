@@ -8,6 +8,8 @@ const projectButton = document.getElementById('projects-button');
 const projects = document.getElementById('projects');
 const techButton = document.getElementById('tech-button');
 const tech = document.getElementById('tech');
+const logos = document.getElementsByClassName('logo');
+const hoveredTech = document.getElementById('hovered-tech');
 const socialButton = document.getElementById('social-button');
 const social = document.getElementById('social');
 const back = document.getElementById('back');
@@ -161,6 +163,16 @@ techButton.addEventListener('click', () => {
         navLinks.style.visibility = 'hidden';
     }
 })
+
+for (let i = 0; i < logos.length; i++) {
+    logos[i].addEventListener('click', (event) => {
+        for (let j = 0; j < logos.length; j++) {
+            logos[j].style.border = 'none';
+        }
+        hoveredTech.innerHTML = event.target.id;
+        logos[i].style.border = '2px solid white';
+    })
+}
 
 socialButton.addEventListener('click', () => {
     if (currentSection !== social) {
