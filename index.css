@@ -338,14 +338,18 @@ h1, h2, p, li, a {
 #sample-images {
     position: relative;
     margin: 0 auto;
-    width: 250px;
-    height: 75px;
+    width: 50%;
+    height: 150px;
     top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #sample-images img {
     object-fit: cover;
     cursor: pointer;
+    width: 29%;
+    height: 100%;
 }
 
 #sample-images img:hover {
