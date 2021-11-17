@@ -126,6 +126,10 @@ for (let i = 1; i <= 3; i++) {
     const sample = document.getElementById(`sample-image${i}`);
     sample.addEventListener('click', () => {
         aboutBox.style.backgroundImage = aboutImages[i - 1];
+        aboutBox.style.animation = '4s fade-in-out';
+        setTimeout(() => {
+            aboutBox.removeAttribute('style');
+        }, 4000);
     })
 }
 
